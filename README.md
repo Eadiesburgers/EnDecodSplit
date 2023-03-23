@@ -1,7 +1,7 @@
 # EnDecodSplit
-VBScript tool to base64 encode and split a large file of any type into multiple configurable smaller files or join and decode a bunch of files.
+VBScript tool to base64 encode and split a large file of any type into multiple configurable smaller files, or join and decode a bunch of files.
 
-You have a large file you need to email but it far exceeds your companies email attachment size policy.
+You have a large file you need to email but it far exceeds your organisation email attachment size policy.
 It would take longer to provision an exemption case and there are no COTS solutions that can resolve this issue in your APL.
 Then here's a VBScript utility to the rescue, baked in Notepad.exe.
 
