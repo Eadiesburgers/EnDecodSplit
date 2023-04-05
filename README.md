@@ -10,5 +10,8 @@ The utility also performs the reverse, in joining the split files and base64 dec
 
 Why VBScript? It'll run on any Windows platform post 1996, right up to the latest (to date) Windows 11 edition, including Insider pre-release builds.  At some point in time it would have been pivotal in the support of your IT estate and this enduring backward compatibility and fear of decommissioning activities breaking something ensures it lives on.  It's easy to understand and thus own and extend with features.  Better still it's difficult to lock-down at a granular level, unlike PowerShell with it's tunable execution policy.  Therefore if cscript/wscript binaries work, they'll work in their entirety, as the dependency files are few and far between. 
 
-Run via console cscript binary (cscript.exe) or Win app binary (wscript.exe):  cscript /nologo endecodesplit.vbs
-Pass no parameters for help text.
+Run via console cscript binary (cscript.exe) or Win app binary (wscript.exe).  Pass no parameters for help text guidance to be displayed.
+
+cscript /nologo endecodsplit.vbs
+
+
