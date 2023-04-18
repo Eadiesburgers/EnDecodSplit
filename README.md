@@ -1,9 +1,11 @@
 # EnDecodSplit
 VBScript tool to base64 encode and split a large file of any type into multiple configurable smaller files, or join and decode a bunch of files.
+Additionally, assists in circumventing banned email attachment file type policy by temporarily corrupting the file header metadata of the first file, to ensure that unless all par files received are together and the same script is used to decode, email relay gateways or email servers will be unaware of the file type in transit.
 
 You have a large file you need to email but it far exceeds your organisation email attachment size policy.
+Additionally, you have a file type that needs sending / receiving that is banned by your organisations email attachment policy.
 It would take longer to provision an exemption case and there are no COTS solutions that can resolve this issue in your APL.
-Then here's a VBScript utility to the rescue, baked in Notepad.exe.
+Here's a VBScript utility to the rescue, baked in Notepad.exe.
 
 The utility base64 encodes and splits-up a larger file into file sizes of your choice, with no two files being of the same size.  This assists the email attachments getting to their intended estination, should any old school email IDS technologies be in place.
 The utility also performs the reverse, in joining the split files and base64 decoding them, back to their original single file.
